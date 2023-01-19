@@ -52,7 +52,7 @@ generateBill.addEventListener("click", () => {
             but.forEach(nav => {
                 nav.classList.remove("tip-button-active");
             })
-            people = 0
+            people = 1
             noOfPeople.innerHTML = people
         }
     }
