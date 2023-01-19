@@ -55,6 +55,6 @@ generateBill.addEventListener("click", () => {
             people = 1
             noOfPeople.innerHTML = people
         }
-    }
+    } 
 
 )
