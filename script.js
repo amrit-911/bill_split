@@ -39,7 +39,7 @@ generateBill.addEventListener("click", () => {
             console.log(tip)
             document.querySelector(".tip-amount").innerHTML = "₹ " + tip + ".00"
             let totalAmount = Math.floor(billAmount / people)
-            document.querySelector(".total").innerHTML = "₹ " + totalAmount + ".00"
+            document.querySelector(".total").innerHTML = "₹ " + Math.floor(((tipAmount / 100) * billAmount) + totalAmount) + ".00"
             generateBill.innerHTML = "Reset"
         } else if (generateBill.innerHTML == "Reset") {
             let tip = 0
